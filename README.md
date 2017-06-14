@@ -10,15 +10,16 @@ Non-Stationary Multicomponent Signals. Proc. 25th European Signal Processing Con
 
 ## Code Example
 
-The figures produced in our paper can be generated using:
+The figures produced in [1] can be generated using:
 
-*Fig1_Ligo_compare.m*, 
+*Fig1_Ligo_compare.m*\\
+ 
 *Fig2_cello.m*
 
 ## Motivation
 
-This toolbox is proposed with the sake of making our researches reproducible.
-Anyone can reuse and modify this software for academic purposes.
+This toolbox is proposed with the sake of reproducible research.
+Anyone can reuse and modify this software for academic purposes only.
 
 ## API Reference
 
@@ -26,4 +27,4 @@ A detailed documentation will be available soon.
 
 ## Contributors
 
-Dominique Fourer, Jinane Harmouche, Jeremy Schmitt, Thomas Oberlin, Sylvain Meignen, Francois Auger and Patrick Flandrin
+Dominique Fourer (dominique@fourer.fr), Jinane Harmouche, Jeremy Schmitt, Thomas Oberlin, Sylvain Meignen, Francois Auger and Patrick Flandrin
