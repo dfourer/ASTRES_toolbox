@@ -12,7 +12,7 @@ Non-Stationary Multicomponent Signals. Proc. 25th European Signal Processing Con
 
 The figures produced in [1] can be generated using:
 
-*Fig1_Ligo_compare.m*\
+*Fig1_Ligo_compare.m*
  
 *Fig2_cello.m*
 
