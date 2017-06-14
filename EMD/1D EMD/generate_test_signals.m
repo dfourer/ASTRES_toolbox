@@ -1,0 +1,1 @@
+%Generation of test signals (trend, sinusoid, impulse, chirp...)
