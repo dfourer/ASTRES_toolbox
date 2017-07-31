@@ -113,7 +113,7 @@ pause(1)
 M = 1024;
 L = 20;
 gamma_K = 1e-4;
-[tfr, stfr] = my_tfrsgab(x, M, L, gamma_K);     %% (faster) classical  synchrosqueezed STFT
+[tfr, stfr] = tfrsgab(x, M, L, gamma_K);     %% (faster) classical  synchrosqueezed STFT
 
 %% ridge extraction
 Mh = round(M/2);

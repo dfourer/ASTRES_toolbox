@@ -31,7 +31,7 @@ for i = 1:nb_comp
    pause
   end
   
-  Y(i, :) = my_rectfrsgab(tmp_tfr, L, M); 
+  Y(i, :) = rectfrsgab(tmp_tfr, L, M); 
 end
 
 end
