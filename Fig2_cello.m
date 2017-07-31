@@ -1,6 +1,13 @@
 clear all
 close all
 
+chemin = './figs';
+if ~exist(chemin, 'dir')
+  mkdir(chemin);
+end
+
+addpath('./EMD/1D EMD/Classical EMD')
+addpath('./ST')
 addpath('./SSA')
 addpath('./SSA')
 addpath('./segtool')
@@ -37,6 +44,7 @@ colormap(flipud(colormap));
 xlabel('time [s]')
 ylabel('frequency [Hz]')
 title(sprintf('%s spectrogram', signal_name));
+saveas(gcf, sprintf('%s/cello_spectrogram.eps', chemin), 'epsc');
 pause(1)
 
 
@@ -77,6 +85,9 @@ for i = 1:nc
  ylabel('frequency [Hz]')
  if i == 1, title('SSA extracted components'); end
 end
+saveas(gcf, sprintf('%s/cello_SSA.eps', chemin), 'epsc');
+pause(1)
+
 
 %% test EMD
 Y_emd = emd(x, 'MAXMODES', nc);
@@ -95,6 +106,8 @@ for i = 1:nc
  ylabel('frequency [Hz]')
  if i == 1, title('EMD extracted components'); end
 end
+saveas(gcf, sprintf('%s/cello_EMD.eps', chemin), 'epsc');
+pause(1)
 
 %% test synchrosqueezing
 M = 1024;
@@ -133,4 +146,6 @@ for i = 1:nc
  ylabel('frequency [Hz]')
  if i == 1, title('synchrosqueezing extracted components'); end
 end
-
+saveas(gcf, sprintf('%s/cello_synchrosqueezing.eps', chemin), 'epsc');
+pause(1)
+eps2pdf(chemin);
